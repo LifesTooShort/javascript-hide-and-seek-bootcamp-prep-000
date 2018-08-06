@@ -29,7 +29,7 @@ function deepestChild() {
     console.log(sel.children);
     depth++;
   }
-  */
+  
   
   
   console.log(sel);
