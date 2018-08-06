@@ -23,7 +23,7 @@ function deepestChild() {
   let sel = document.querySelector('div#grand-node');
   let depth = 0;
   
-  /* 
+  
   while (sel.children !== null) {
     sel = sel.children;
     console.log(sel.children);
