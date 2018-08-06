@@ -19,12 +19,13 @@ function increaseRankBy(n) {
 }
 
 function deepestChild() {
-  // select the element that's a div with the  'div#grand-node'
-  let sel = document.querySelectorAll('div#grand-node');
+  // select the element that's a div with the id 'grand-node'
+  let sel = document.querySelector('div#grand-node');
   let depth = 0;
   
-  while (sel[depth].children !== null) {
-    console.log(sel[depth].children);
+  while (sel.children !== null) {
+    sel = sel.children;
+    console.log(sel.children);
     depth++;
   }
   
