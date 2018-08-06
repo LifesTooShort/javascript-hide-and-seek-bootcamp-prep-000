@@ -19,7 +19,7 @@ function increaseRankBy(n) {
 }
 
 function deepestChild() {
-  // select the 'div#grand-node'
+  // select the element that's a div with the  'div#grand-node'
   let sel = document.querySelectorAll('div#grand-node');
   let depth = 0;
   
