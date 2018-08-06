@@ -23,12 +23,9 @@ function deepestChild() {
   let sel = document.querySelector('div#grand-node');
   
   let nextChild = sel.children;
-  console.log(nextChild);
-  console.log(nextChild[0].children);
 
   while (nextChild[0].children !== undefined) {
     nextChild = nextChild[0].children;
-    console.log(nextChild[0].innerHTML);
   }
 
 
