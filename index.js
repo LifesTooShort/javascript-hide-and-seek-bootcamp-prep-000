@@ -26,6 +26,7 @@ function deepestChild() {
 
   while (nextChild[0].children !== undefined) {
     nextChild = nextChild[0].children;
+    console.log(nextChild[0].children);
   }
 
 
