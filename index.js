@@ -21,7 +21,6 @@ function increaseRankBy(n) {
 function deepestChild() {
   // select the element that's a div with the id 'grand-node'
   let sel = document.querySelector('div#grand-node');
-  let  = 0;
   
   let nextChild = sel.children[0];
  /* 
