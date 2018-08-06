@@ -23,18 +23,14 @@ function deepestChild() {
   let sel = document.querySelector('div#grand-node');
   
   let nextChild = sel.children[0];
- /* 
-  while (sel.children !== null) {
-    sel = sel.children;
-    console.log(sel.children);
-    depth++;
+
+  while (nextChild[0].children !== undefined) {
+    nextChild = nextChild[0].children;
+    console.log(nextChild[0].innerHTML);
   }
-  */
-  
-  
-  console.log(sel);
-  
-  return sel;
+
+
+  return nextChild[0].innerHTML;
 }
 
 //console.log(getFirstSelector('div').id);
