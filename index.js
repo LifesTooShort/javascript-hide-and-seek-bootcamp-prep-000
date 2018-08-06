@@ -30,7 +30,9 @@ function deepestChild() {
     console.log(nextChild[0].innerHTML);
   }
 
-
+  console.log("Compare results");
+  console.log(document.querySelector('#grand-node div div div div'));
+  console.log(nextChild[0]);
   return nextChild[0].innerHTML;
 }
 
