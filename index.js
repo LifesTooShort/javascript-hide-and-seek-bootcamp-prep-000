@@ -22,7 +22,9 @@ function deepestChild() {
   // select the element that's a div with the id 'grand-node'
   let sel = document.querySelector('div#grand-node');
   
-  let nextChild = sel.children[0];
+  let nextChild = sel.children;
+  console.log(nextChild);
+  console.log(nextChild[0].children);
 
   while (nextChild[0].children !== undefined) {
     nextChild = nextChild[0].children;
