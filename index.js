@@ -24,7 +24,8 @@ function deepestChild() {
   
   let nextChild = sel.children;
 
-  while (nextChild[0].children !== undefined) {
+  while (true) {
+    if (nextChild[0].children === undefined) break;
     nextChild = nextChild[0].children;
     console.log(nextChild[0].innerHTML);
   }
