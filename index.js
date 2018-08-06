@@ -33,10 +33,11 @@ function deepestChild() {
   
   
   console.log(sel);
+  return sel;
 }
 
 //console.log(getFirstSelector('div').id);
 //console.log(getFirstSelector('.ranked-list'));
 //console.log(nestedTarget());
 //console.log(increaseRankBy(3));
-console.log (deepestChild());
+console.log (thing = deepestChild());
